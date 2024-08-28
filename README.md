@@ -49,6 +49,14 @@ For my deep dive into the job market, I harnessed the power of several key tools
 ### Job Title and Seniority Analysis
 
 1. **Common Job Titles**: Determine the most frequently listed job titles.
+   ```sql
+    SELECT 
+      job_title,
+      count(job_title) job_title_cnt
+    FROM
+      job_postings
+    GROUP BY job_title
+    ORDER BY job_title_cnt DESC;
 2. **Job Level Distribution**: Analyze the distribution of job levels (e.g., entry, mid, senior) across different roles.
 3. **Title vs. Skill Correlation**: Examine the correlation between job titles and required skills.
 
