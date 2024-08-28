@@ -6,10 +6,7 @@
 
 🔍 SQL queries? Check them out here:
 
-
-Here's a background section you can use for your analysis:
-
-##Background
+## Background
 
 In today’s competitive job market, understanding the demand for various skills and job roles is crucial for both job seekers and employers. This project emerged from a need to gain a deeper understanding of the current job market dynamics, particularly in the field of data analysis and related roles. By analyzing job postings, the objective is to identify key trends, in-demand skills, and common job titles to help streamline career planning and hiring strategies.
 
@@ -25,7 +22,7 @@ The primary questions driving this analysis were:
     
 By addressing these questions, the analysis aims to provide actionable insights that can guide job seekers in identifying lucrative opportunities and help employers in targeting the right talent. This project not only enhances our understanding of the job market but also equips stakeholders with valuable information to make informed decisions.
 
-##Tools I Used
+## Tools I Used
 
 For my deep dive into the job market, I harnessed the power of several key tools:
 
