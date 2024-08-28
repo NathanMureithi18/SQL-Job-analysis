@@ -33,7 +33,18 @@ For my deep dive into the job market, I harnessed the power of several key tools
 
 ## Insights and Analysis
 
+### Company Analysis
 
+1. **Top Hiring Companies**: Identify the companies with the most job postings.
+   ```sql
+     SELECT 
+       company,
+       count(company) AS No_of_jobs
+     FROM
+       job_postings
+     GROUP BY company 
+     ORDER BY No_of_jobs DESC;
+3. **Company vs. Skill Requirements**: Compare skill requirements across different companies.
 
 ### Job Title and Seniority Analysis
 
@@ -51,11 +62,6 @@ For my deep dive into the job market, I harnessed the power of several key tools
 
 1. **Job Distribution by Location**: Identify which cities or countries have the highest number of job postings.
 2. **Location vs. Job Type**: Analyze how job types (e.g., remote, onsite) vary by location.
-
-### Company Analysis
-
-1. **Top Hiring Companies**: Identify the companies with the most job postings.
-2. **Company vs. Skill Requirements**: Compare skill requirements across different companies.
 
 ### Time-Based Analysis
 
