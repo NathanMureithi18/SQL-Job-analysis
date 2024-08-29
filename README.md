@@ -36,22 +36,24 @@ For my deep dive into the analyst job market, I harnessed the power of several k
 To focus on the analyst job roles only we will filter the data: 
 
 ```sql
-SELECT 
-    jp.job_link,
-    jp.job_title,
-    jp.is_being_worked,
-    jp.job_level,
-    jp.job_type,
-    js.job_skills
-FROM 
-    job_postings AS jp
-INNER JOIN job_skills AS js 
-ON jp.job_link = js.job_link
-WHERE LOWER(job_title) LIKE '%analyst%';
-```
+  -- Data analyst job roles
+  SELECT 
+      jp.job_link,
+      jp.job_title,
+      jp.is_being_worked,
+      jp.job_level,
+      jp.job_type,
+      js.job_skills
+  FROM 
+      job_postings AS jp
+  INNER JOIN job_skills AS js 
+  ON jp.job_link = js.job_link
+  WHERE LOWER(job_title) LIKE '%analyst%';
+  ```
 
 #### N/B: The job postings table contains only posting that are active.
 ```sql
+  -- Active data analyst job role
   SELECT
     last_status,
     count(last_status) cnt
