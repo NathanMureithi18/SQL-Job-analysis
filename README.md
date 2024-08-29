@@ -12,18 +12,6 @@ In today’s competitive job market, understanding the demand for various analys
 
 The data used in this analysis comes from an extensive SQL course project, encompassing job postings data that includes information on job titles, required skills, locations, and other relevant details for analyst roles. This dataset provides a comprehensive view of the job market, allowing for insightful analysis on various aspects of job postings.
 
-#### N/B: The job postings table contains only posting that are active.
-```sql
-  SELECT
-    last_status,
-    count(last_status) cnt
-  FROM
-    job_postings
-  WHERE LOWER(job_title) LIKE '%analyst%' 
-  GROUP BY last_status 
-  ORDER BY cnt DESC;
-```
-
 The primary questions driving this analysis were:
   
   - What are the most sought-after 🧠 skills across analyst job postings?
@@ -60,6 +48,18 @@ FROM
 INNER JOIN job_skills AS js 
 ON jp.job_link = js.job_link
 WHERE LOWER(job_title) LIKE '%analyst%';
+```
+
+#### N/B: The job postings table contains only posting that are active.
+```sql
+  SELECT
+    last_status,
+    count(last_status) cnt
+  FROM
+    job_postings
+  WHERE LOWER(job_title) LIKE '%analyst%' 
+  GROUP BY last_status 
+  ORDER BY cnt DESC;
 ```
 
 ### 1. Descriptive Analysis:
