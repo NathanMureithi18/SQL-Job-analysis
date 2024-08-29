@@ -74,12 +74,23 @@ To focus on the analyst job roles only we will filter the data:
       job_postings
     WHERE
       LOWER(job_title) LIKE '%analyst%' ;
+
+  - **Company Analysis**: Identify which companies are posting the most analyst jobs.
+```sql
+  SELECT 
+      company,
+      count(company) AS Number_of_jobs
+  FROM 
+      job_postings 
+  WHERE LOWER(job_title) LIKE '%analyst%'
+  GROUP BY company 
+  ORDER BY Number_of_jobs DESC;
+```
  - **Location Analysis**: Analyze the geographical distribution of analyst jobs to identify hotspots.
 
    
- - **Company Analysis**: Identify which companies are posting the most analyst jobs.
 
-
+  
 
 
 
