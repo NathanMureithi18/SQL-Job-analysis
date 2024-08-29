@@ -12,7 +12,7 @@ In today’s competitive job market, understanding the demand for various analys
 
 The data used in this analysis comes from an extensive SQL course project, encompassing job postings data that includes information on job titles, required skills, locations, and other relevant details for analyst roles. This dataset provides a comprehensive view of the job market, allowing for insightful analysis on various aspects of job postings.
 
-##### N/B: The job postings table contains only posting that are active.
+#### N/B: The job postings table contains only posting that are active.
 
 The primary questions driving this analysis were:
   
