@@ -30,3 +30,34 @@ For my deep dive into the analyst job market, I harnessed the power of several k
   - **PostgreSQL**: The chosen database management system, ideal for handling the analyst job posting data.
   - **DBeaver**: My go-to for database management and executing SQL queries.
   - **Git & GitHub**: Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
+
+## Analysis
+
+  To focus on the analyst job roles only we will filter the data:
+   ```sql
+      SELECT 
+          jp.job_link,
+          jp.job_title,
+          jp.is_being_worked,
+          jp.job_level,
+          jp.job_type,
+          js.job_skills
+      FROM 
+          job_postings AS jp
+      INNER JOIN job_skills AS js 
+      ON jp.job_link = js.job_link
+      WHERE LOWER(job_title) LIKE '%analyst%' OR LOWER(job_title) LIKE '%data%analyst%';
+
+### 1. Descriptive Analysis:
+
+ - **Count of Analyst Jobs**: Determine the total number of analyst job postings.
+    
+ - **Location Analysis**: Analyze the geographical distribution of analyst jobs to identify hotspots.
+ - **Company Analysis**: Identify which companies are posting the most analyst jobs.
+
+
+
+
+
+
+
