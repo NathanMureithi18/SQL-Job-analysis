@@ -47,7 +47,7 @@ FROM
     job_postings AS jp
 INNER JOIN job_skills AS js 
 ON jp.job_link = js.job_link
-WHERE LOWER(job_title) LIKE '%analyst%' OR LOWER(job_title) LIKE '%data%analyst%';
+WHERE LOWER(job_title) LIKE '%analyst%';
 ```
 
 ### 1. Descriptive Analysis:
