@@ -12,6 +12,8 @@ In today’s competitive job market, understanding the demand for various analys
 
 The data used in this analysis comes from an extensive SQL course project, encompassing job postings data that includes information on job titles, required skills, locations, and other relevant details for analyst roles. This dataset provides a comprehensive view of the job market, allowing for insightful analysis on various aspects of job postings.
 
+####N/B: The job postings table contains only posting that are active.
+
 The primary questions driving this analysis were:
   
   - What are the most sought-after 🧠 skills across analyst job postings?
@@ -52,8 +54,16 @@ WHERE LOWER(job_title) LIKE '%analyst%';
 
 ### 1. Descriptive Analysis:
  - **Count of Analyst Jobs**: Determine the total number of analyst job postings.
-    
+    ```sql
+    SELECT
+      count(job_link) AS data_jobs
+    FROM
+      job_postings
+    WHERE
+      LOWER(job_title) LIKE '%analyst%' ;
  - **Location Analysis**: Analyze the geographical distribution of analyst jobs to identify hotspots.
+
+   
  - **Company Analysis**: Identify which companies are posting the most analyst jobs.
 
 
