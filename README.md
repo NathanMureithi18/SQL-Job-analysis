@@ -1,5 +1,5 @@
 # Analyst Jobs Analysis
-
+---
 ## Introduction
 
 📊 Welcome to the insights and analysis section of this repository. This 📝document provides a detailed overview of the potential analyses and insights that can be derived from the analyst job postings data. Our goal is to uncover valuable patterns and trends 📈 that can help in understanding the job market dynamics and the skill requirements specifically for analyst roles across various locations.
@@ -67,6 +67,7 @@ To focus on the analyst job roles only we will filter the data:
 ### 1. Descriptive Analysis:
  - **Count of Analyst Jobs**: Determine the total number of analyst job postings.
     ```sql
+    -- Number of data analyst job roles
     SELECT
       count(job_link) AS data_jobs
     FROM
