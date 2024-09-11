@@ -261,7 +261,7 @@ To focus on the analyst job roles only we will filter the data:
       skill_count DESC;
 ```
 
-![Top 10 Skills for Data analysts](assets\Top_10_skills.jpeg)
+![Top 10 Skills for Data analysts](assets/Top_10_skills.jpeg)
 *Bar graph visualizing the top 10 in demand skills for a data analyst job role. This chart was produced by ChatGPT*
 
 Here's the breakdown of the most demanded skills for the data analyst jobs :
@@ -324,7 +324,7 @@ GROUP BY
 ORDER BY 
     skill_count DESC;
 ```
-![Top 10 in demand skills for Assocaite Data analyst job roles](assets\top_in_demand_skills_associate_level.png)
+![Top 10 in demand skills for Assocaite Data analyst job roles](assets/top_in_demand_skills_associate_level.png)
 *Bar graph visualizing the top 10 in demand skill of Associate data analyst job roles. This chart was produced by ChatGPT*
 
  **2. Mid senior job level**
@@ -365,7 +365,7 @@ GROUP BY
 ORDER BY 
     job_level DESC,skill_count DESC LIMIT 10;
 ```
-![Top 10 in demand skills for the Mid senior Data analyst job role](assets\top_in_demand_skills_mid_senior_level_labeled.png)
+![Top 10 in demand skills for the Mid senior Data analyst job role](assets/top_in_demand_skills_mid_senior_level_labeled.png)
 *Bar graph showing the top in-demand skills for the Mid-senior job level. This chart was produced by ChatGPT*
 
  - **Skill Distribution by Location**:Analyze how the demand for specific skills varies by location.
