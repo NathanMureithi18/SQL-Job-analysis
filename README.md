@@ -206,7 +206,7 @@ To focus on the analyst job roles only we will filter the data:
       day;
 ```
 
-![Job postings trends over time](assets\Data_analyst_job_count_over_time.jpeg)
+![Job postings trends over time](assets/Data_analyst_job_count_over_time.jpeg)
 *Line graph showing the number of Job postings over time. This chart was produced by ChatGPT*
 ### 3. Skill Analysis
  - **Most In-Demand Skills**:Identify the most frequently mentioned skills in analyst job postings. This analysis will reveal which skills are most valued by employers.
